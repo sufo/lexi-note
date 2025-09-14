@@ -1,12 +1,10 @@
 <div align="center">
-  <img src="./app/src/main/ic_launcher-playstore.png" alt="LexiNote Logo" width="150">
+  <img src="./app/src/main/ic_launcher-playstore.png" alt="LexiNote Logo" width="160">
 </div>
 
 <div align="center">
 
-**乐词笔记**
-
-[English](./README.md)
+中文 | [English](./README.md)
 
 </div>
 
