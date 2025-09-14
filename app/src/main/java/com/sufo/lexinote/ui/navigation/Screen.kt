@@ -1,0 +1,32 @@
+package com.sufo.lexinote.ui.navigation
+
+sealed class Screen(val route: String) {
+    object Splash : Screen("splash")
+    object Home : Screen("home")
+    object WordList : Screen("word_list")
+    object Me : Screen("me")
+    object Explore : Screen("explore")
+    object AddWord : Screen("add_word")
+    object AddNotebook : Screen("add_notebook")
+    object ReviewHub : Screen("review_hub")
+    object FlashcardView : Screen("flashcard_view")
+    object ReviewSummary : Screen("review_summary")
+    object SearchWord : Screen("search_word")
+    object WordDetail : Screen("word_detail")
+    object TestHub : Screen("test_hub")
+    object QuizView : Screen("quiz_view")
+    object TestResults : Screen("test_results")
+    object SpellingView : Screen("spelling_view")
+    object ClozeView : Screen("cloze_view")
+    object ThemeSettings : Screen("theme_settings")
+    object ProfileSettings : Screen("profile_settings")
+    object Login : Screen("login")
+    object EmailEntry : Screen("email_entry")
+    object EmailSent : Screen("email_sent")
+    object PhoneEntry : Screen("phone_entry")
+    object OtpEntry : Screen("otp_entry")
+    object Subscription : Screen("subscription")
+//    object SearchResults : Screen("search_results")
+    object DictionaryEntry : Screen("dictionary_entry")
+    object Main : Screen("main") // A new route for the screen that contains the bottom nav
+}

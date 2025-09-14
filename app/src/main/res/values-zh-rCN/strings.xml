@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">乐词笔记</string>
+
+    <string name="save">保存</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="back">返回</string>
+    <string name="search">搜索</string>
+    <string name="settings">设置</string>
+    <string name="record_audio">录音</string>
+    <string name="review">复习</string>
+    <string name="version">版本</string>
+    <string name="del">删除</string>
+    <string name="mastered">已掌握</string>
+
+    <string name="notebook">单词本</string>
+    <string name="explore">探索</string>
+    <string name="me">我的</string>
+
+    <string name="familiarity">熟悉程度</string>
+    <string name="update_time">修改时间</string>
+    <string name="review_time">学习时间</string>
+    <string name="random">随机</string>
+
+    <!-- HomeScreen -->
+    <string name="add_entry_desc">添加新条目</string>
+    <string name="audio_attached_desc">有音频</string>
+    <string name="learned_today">今日已学</string>
+    <string name="to_be_reviewed">待复习</string>
+    <string name="word_mastered">%s 掌握单词</string>
+    <string name="edit_details">编辑</string>
+    <string name="del_notebook">删除</string>
+    <string name="del_notebook_tip">您确定要删除 %s 笔记本吗？其中的所有单词都将被永久删除。</string>
+    <string name="choose_icon">单词本图标</string>
+    <string name="notebook_name">单词本名称</string>
+    <string name="desc_optional">描述 (可选)</string>
+    <string name="total_of_word">总词数</string>
+    <string name="original_text_label">单词/短语</string>
+    <string name="word_phrase_number">单词/短语: %s</string>
+    <!-- AddEntryScreen -->
+<!--    <string name="add_new_entry_title">添加新条目</string>-->
+<!--    <string name="save_entry_desc">保存条目</string>-->
+<!--    <string name="original_text_label">单词/短语</string>-->
+<!--    <string name="translation_label">翻译/释义</string>-->
+<!--    <string name="example_sentence_label">例句 (可选)</string>-->
+<!--    <string name="upload_audio_button">上传</string>-->
+
+    <string name="tense">时态</string>
+    <string name="comparative">比较级</string>
+
+    <!-- Explore Screen Dialog -->
+    <string name="import_vocabulary_title">导入词库</string>
+    <string name="import_vocabulary_message">确定要将“%s”添加到你的单词本吗？</string>
+
+
+    <!-- Add Word Screen -->
+    <string name="add_word_placeholder_word">输入单词或短语</string>
+    <string name="add_word_cd_pronunciation">发音</string>
+    <string name="add_word_title_translation">释义</string>
+    <string name="add_word_placeholder_translation">输入释义</string>
+    <string name="add_word_title_examples">我的例句</string>
+    <string name="add_word_placeholder_examples">输入一个例句</string>
+    <string name="add_word_title_notes">我的笔记</string>
+    <string name="add_word_placeholder_notes">添加你自己的联想、助记符...</string>
+    <string name="add_word_title_images">相关图片</string>
+    <string name="add_word_cd_add_image">添加图片</string>
+    <string name="add_word_cd_remove_image">移除图片</string>
+    <string name="add_word_title_audio">我的音频</string>
+    <string name="add_word_select_file_button">选择文件</string>
+    <string name="add_word_cd_play_audio">播放音频</string>
+    <string name="add_word_cd_remove_audio">移除音频</string>
+    <string name="add_word_cd_expand_section">展开或折叠区域</string>
+    <string name="add_word_record_audio_title">录制音频</string>
+    <string name="add_word_record_release_to_stop">松开以停止</string>
+    <string name="add_word_record_tap_to_start">长按以开始录音</string>
+    <string name="edit_word_title">编辑</string>
+
+    <!-- Review Screen -->
+    <string name="review_by_notebook_label">按单词本复习</string>
+    <string name="review_streak_pep_talk">保持你的连续纪录！</string>
+    <string name="review_words_to_review_today">个单词需要今天复习</string>
+    <string name="review_start_learning_button">开始学习</string>
+    <string name="review_item_to_review_count">有 %d 个要复习</string>
+    <string name="review_all_caught_up">都复习完啦！</string>
+
+    <!-- Flashcard Screen -->
+    <string name="flashcard_close_button_desc">关闭</string>
+    <string name="flashcard_tap_to_see_definition">轻触查看释义</string>
+    <string name="flashcard_example_label">例句</string>
+    <string name="flashcard_hint_known">认识</string>
+    <string name="flashcard_hint_forgot">不认识</string>
+    <string name="flashcard_speak_word_desc">朗读单词</string>
+
+    <!-- Spelling Test -->
+    <string name="spelling_test_prompt">请键入您听到的单词</string>
+    <string name="spelling_test_textfield_label">您的答案</string>
+    <string name="spelling_test_give_up_button">不会</string>
+    <string name="spelling_test_next_button">下一题</string>
+    <string name="spelling_test_correct_answer_label">正确答案：</string>
+    <string name="spelling_test_you_typed_label">您输入了：%s</string>
+    <string name="spelling_test_correction_prompt">请输入正确单词以继续</string>
+
+    <!-- Multiple Choice Test -->
+    <string name="multiple_choice_next_button">下一题</string>
+
+    <!-- Finish View -->
+    <string name="finish_view_title">恭喜！</string>
+    <string name="finish_view_subtitle">您已完成本次所有复习。</string>
+    <string name="finish_view_back_button">返回中心</string>
+
+    <!-- Feedback Buttons -->
+    <string name="feedback_know">认识</string>
+    <string name="feedback_vague">模糊</string>
+    <string name="feedback_forgot">不认识</string>
+
+    <!--me-->
+    <string name="study_days">学习天数</string>
+    <string name="current_streak">连续天数</string>
+    <string name="setting_preference">偏好设置</string>
+    <string name="setting_export_backup">导出 &amp; 备份</string>
+    <string name="theme_mode">主题模式</string>
+    <string name="theme_color">主题颜色</string>
+    <string name="developing">开发中...</string>
+    <string name="light">浅色模式</string>
+    <string name="dark">深色模式</string>
+    <string name="fit_system">跟随系统</string>
+    <string name="appearance">外观</string>
+    <string name="notification">通知</string>
+    <string name="export_data">导出</string>
+    <string name="import_data">导入</string>
+
+    <!---wordList-->
+    <string name="add_first">开始添加你的第一个单词</string>
+    <string name="add_first_tip">将你遇到的生词、短语或句子记录在这里，开启你的学习之旅。</string>
+    <string name="add_new_word">添加新词</string>
+
+    <string name="add">添加</string>
+    <string name="added">已添加</string>
+    <string name="done">已完成</string>
+
+    <string name="review_reminder">复习提醒</string>
+    <string name="review_reminder_desc">定时提醒用户进行单词复习</string>
+    <string name="remind_tip">您有 %d 个单词等待复习</string>
+
+    <string name="add_notebook">新增单词本</string>
+    <string name="not_reciewd_yet">还未复习</string>
+
+    <string name="last_review">上次复习：</string>
+</resources>

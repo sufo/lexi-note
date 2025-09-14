@@ -1,0 +1,154 @@
+<resources>
+    <string name="app_name">LexiNote</string>
+
+    <string name="save">Save</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="back">Navigate back</string>
+    <string name="search">Search</string>
+    <string name="settings">Settings</string>
+    <string name="record_audio">Record</string>
+    <string name="review">Review</string>
+    <string name="version">Version</string>
+    <string name="del">Delete</string>
+    <string name="mastered">Mastered</string>
+
+    <string name="notebook">Notebook</string>
+    <string name="explore">Explore</string>
+    <string name="me">Me</string>
+
+    <string name="familiarity">Familiarity</string>
+    <string name="update_time">Modification time</string>
+    <string name="review_time">Review time</string>
+    <string name="random">Random</string>
+
+    <!-- HomeScreen -->
+    <string name="add_entry_desc">Add new entry</string>
+    <string name="audio_attached_desc">Audio attached</string>
+    <string name="learned_today">Learned today</string>
+    <string name="to_be_reviewed">To be reviewed</string>
+    <string name="word_mastered">%s Word mastered</string>
+    <string name="edit_details">Edit details</string>
+    <string name="del_notebook">Delete Notebook</string>
+    <string name="del_notebook_tip">Are you sure you want to delete the %s notebook? All of its words will be permanently removed.</string>
+    <string name="choose_icon">Choose an Icon</string>
+    <string name="notebook_name">Notebook Name</string>
+    <string name="desc_optional">Description (Optional)</string>
+    <string name="total_of_word">Total</string>
+    <string name="original_text_label">Word/Phrase</string>
+    <string name="word_phrase_number">Word/Phrase: %s</string>
+    <!-- AddEntryScreen -->
+<!--    <string name="add_new_entry_title">Add New Entry</string>-->
+<!--    <string name="save_entry_desc">Save entry</string>-->
+<!--    <string name="original_text_label">Word/Phrase</string>-->
+<!--    <string name="translation_label">Translation / Meaning</string>-->
+<!--    <string name="example_sentence_label">Example Sentence (Optional)</string>-->
+<!--    <string name="upload_audio_button">Upload</string>-->
+
+
+
+    <string name="tense">tense</string>
+    <string name="comparative">comparative</string>
+
+    <!-- Explore Screen Dialog -->
+    <string name="import_vocabulary_title">Import Vocabulary</string>
+    <string name="import_vocabulary_message">Are you sure you want to add "%s" to your notebook?</string>
+
+
+    <!-- Add Word Screen -->
+
+    <string name="add_word_placeholder_word">Enter word or phrase</string>
+    <string name="add_word_cd_pronunciation">Pronunciation</string>
+    <string name="add_word_title_translation">Translation</string>
+    <string name="add_word_placeholder_translation">Enter translation</string>
+    <string name="add_word_title_examples">My Examples</string>
+    <string name="add_word_placeholder_examples">Enter an example sentence</string>
+    <string name="add_word_title_notes">My Notes</string>
+    <string name="add_word_placeholder_notes">Add your own associations, mnemonics…</string>
+    <string name="add_word_title_images">Associated Images</string>
+    <string name="add_word_cd_add_image">Add image</string>
+    <string name="add_word_cd_remove_image">Remove image</string>
+    <string name="add_word_title_audio">My Audio</string>
+    <string name="add_word_select_file_button">Select File</string>
+    <string name="add_word_cd_play_audio">Play audio</string>
+    <string name="add_word_cd_remove_audio">Remove audio</string>
+    <string name="add_word_cd_expand_section">Expand or collapse section</string>
+    <string name="add_word_record_audio_title">Record Audio</string>
+    <string name="add_word_record_release_to_stop">Release to stop</string>
+    <string name="add_word_record_tap_to_start">Tap and hold to start recording</string>
+    <string name="edit_word_title">Edit Word</string>
+
+    <!-- Review Screen -->
+    <string name="review_by_notebook_label">Or review by notebook</string>
+    <string name="review_streak_pep_talk">Keep your streak going!</string>
+    <string name="review_words_to_review_today">words to review today</string>
+    <string name="review_start_learning_button">Start Learning</string>
+    <string name="review_item_to_review_count">%d to review</string>
+    <string name="review_all_caught_up">All caught up!</string>
+
+    <!-- Flashcard Screen -->
+    <string name="flashcard_close_button_desc">Close</string>
+    <string name="flashcard_tap_to_see_definition">Tap to see definition</string>
+    <string name="flashcard_example_label">EXAMPLE</string>
+    <string name="flashcard_hint_known">Known</string>
+    <string name="flashcard_hint_forgot">Forgot</string>
+    <string name="flashcard_speak_word_desc">Speak word</string>
+
+    <!-- Spelling Test -->
+    <string name="spelling_test_prompt">Type what you hear</string>
+    <string name="spelling_test_textfield_label">Your answer</string>
+    <string name="spelling_test_give_up_button">I don\'t know</string>
+    <string name="spelling_test_next_button">Next</string>
+    <string name="spelling_test_correct_answer_label">Correct Answer:</string>
+    <string name="spelling_test_you_typed_label">You typed: %s</string>
+    <string name="spelling_test_correction_prompt">Type the correct word to continue</string>
+
+    <!-- Multiple Choice Test -->
+    <string name="multiple_choice_next_button">Next Question</string>
+
+    <!-- Finish View -->
+    <string name="finish_view_title">Congratulations!</string>
+    <string name="finish_view_subtitle">You have finished all reviews for now.</string>
+    <string name="finish_view_back_button">Back to Hub</string>
+
+    <!-- Feedback Buttons -->
+    <string name="feedback_know">Known</string>
+    <string name="feedback_vague">Vague</string>
+    <string name="feedback_forgot">Forgot</string>
+
+    <!--me-->
+    <string name="study_days">Study Days</string>
+    <string name="current_streak">Current Streak</string>
+
+    <string name="setting_preference">preference</string>
+    <string name="setting_export_backup">Export &amp; Backup</string>
+    <string name="theme_mode">Theme Schema</string>
+    <string name="theme_color">Theme Color</string>
+    <string name="developing">in development</string>
+
+    <string name="light">Light</string>
+    <string name="dark">Dark</string>
+    <string name="fit_system">System</string>
+    <string name="appearance">Appearance</string>
+    <string name="notification">Notification</string>
+    <string name="export_data">Export Data</string>
+    <string name="import_data">Import Data</string>
+
+    <!---wordList-->
+    <string name="add_first">Start adding your first word</string>
+    <string name="add_first_tip">Start your learning journey by recording new words, phrases or sentences you encounter here.</string>
+    <string name="add_new_word">Add new words</string>
+
+    <string name="add">Add</string>
+    <string name="added">Added</string>
+    <string name="done">Done</string>
+
+    <string name="review_reminder">Review Reminder</string>
+    <string name="review_reminder_desc">Regularly remind users to review words</string>
+    <string name="remind_tip">You have %d words to review</string>
+
+    <string name="add_notebook">Add to Notebook</string>
+    <string name="not_reciewd_yet">Not reviewed yet</string>
+
+    <string name="last_review">Last review: </string>
+</resources>
