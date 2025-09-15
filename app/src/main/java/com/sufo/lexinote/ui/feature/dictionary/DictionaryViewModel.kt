@@ -4,8 +4,6 @@ import android.app.Application
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.viewModelScope
 import com.sufo.lexinote.data.local.db.entity.DictWord
-import com.sufo.lexinote.data.remote.api.AppApi
-import com.sufo.lexinote.data.remote.model.ResultState
 import com.sufo.lexinote.data.repo.DictionaryRepository
 import com.sufo.lexinote.data.repo.WordRepository
 import com.sufo.lexinote.ui.base.BaseViewModel
@@ -31,7 +29,7 @@ class DictionaryViewModel @Inject constructor(
     savedStateHandle: SavedStateHandle,
     private val dictionaryRepository: DictionaryRepository,
     private val wordRepository: WordRepository,
-    private val appApi: AppApi,
+//    private val appApi: AppApi,
     navigationService: NavigationService
 ) : BaseViewModel(application, navigationService) {
 
@@ -69,22 +67,23 @@ class DictionaryViewModel @Inject constructor(
                 _uiState.update { it.copy(isLoading = false, searchResult = localResult) }
                 dictionaryRepository.addSearchToHistory(uiState.value.word,localResult.translation)
             } else {
-                when (val networkResult = appApi.searchWord(uiState.value.word)) {
-                    is ResultState.Success -> {
-                        val wordEntry = networkResult.data
-                        _uiState.update { it.copy(isLoading = false, searchResult = wordEntry) }
-                        dictionaryRepository.addSearchToHistory(uiState.value.word,wordEntry?.translation)
-                    }
-                    is ResultState.Empty -> {
-                        _uiState.update { it.copy(isLoading = false, error = "Word not found online.") }
-                    }
-                    is ResultState.Error -> {
-                        _uiState.update { it.copy(isLoading = false, error = "Error: ${networkResult.message}") }
-                    }
-                    is ResultState.Exception -> {
-                        _uiState.update { it.copy(isLoading = false, error = "Network Error: ${networkResult.throwable.message}") }
-                    }
-                }
+                //网络获取
+//                when (val networkResult = appApi.searchWord(uiState.value.word)) {
+//                    is ResultState.Success -> {
+//                        val wordEntry = networkResult.data
+//                        _uiState.update { it.copy(isLoading = false, searchResult = wordEntry) }
+//                        dictionaryRepository.addSearchToHistory(uiState.value.word,wordEntry?.translation)
+//                    }
+//                    is ResultState.Empty -> {
+//                        _uiState.update { it.copy(isLoading = false, error = "Word not found online.") }
+//                    }
+//                    is ResultState.Error -> {
+//                        _uiState.update { it.copy(isLoading = false, error = "Error: ${networkResult.message}") }
+//                    }
+//                    is ResultState.Exception -> {
+//                        _uiState.update { it.copy(isLoading = false, error = "Network Error: ${networkResult.throwable.message}") }
+//                    }
+//                }
             }
         }
     }

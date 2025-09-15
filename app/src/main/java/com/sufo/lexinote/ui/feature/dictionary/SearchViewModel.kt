@@ -6,7 +6,6 @@ import androidx.compose.runtime.snapshotFlow
 import androidx.lifecycle.viewModelScope
 import com.sufo.lexinote.data.local.db.entity.DictWord
 import com.sufo.lexinote.data.local.db.entity.SearchHistory
-import com.sufo.lexinote.data.remote.api.AppApi
 import com.sufo.lexinote.data.repo.DictionaryRepository
 import com.sufo.lexinote.ui.base.BaseViewModel
 import com.sufo.lexinote.ui.navigation.NavigationService
@@ -29,7 +28,7 @@ data class SearchScreenState(
 class SearchViewModel @Inject constructor(
     application: Application,
     private val dictionaryRepository: DictionaryRepository,
-    private val appApi: AppApi,
+//    private val appApi: AppApi,
     private val nav: NavigationService
 ) : BaseViewModel(application,nav) {
 

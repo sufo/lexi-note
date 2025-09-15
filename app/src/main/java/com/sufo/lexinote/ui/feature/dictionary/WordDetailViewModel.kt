@@ -7,8 +7,6 @@ import androidx.lifecycle.viewModelScope
 import com.sufo.lexinote.data.local.db.entity.DictWord
 import com.sufo.lexinote.data.local.db.entity.Notebook
 import com.sufo.lexinote.data.local.db.entity.Word
-import com.sufo.lexinote.data.remote.api.AppApi
-import com.sufo.lexinote.data.remote.model.ResultState
 import com.sufo.lexinote.data.repo.DictionaryRepository
 import com.sufo.lexinote.data.repo.NotebookRepository
 import com.sufo.lexinote.data.repo.WordRepository
@@ -50,7 +48,7 @@ class WordDetailViewModel @Inject constructor(
     private val dictionaryRepository: DictionaryRepository,
     private val wordRepository: WordRepository,
     private val notebookRepository: NotebookRepository,
-    private val appApi: AppApi,
+//    private val appApi: AppApi,
     private val nav: NavigationService
 ) : BaseViewModel(application, nav) {
 
@@ -80,22 +78,22 @@ class WordDetailViewModel @Inject constructor(
                 _uiState.update { it.copy(isLoading = false, dictWord = localResult) }
                 dictionaryRepository.addSearchToHistory(_word, localResult.translation)
             } else {
-                when (val networkResult = appApi.searchWord(_word)) {
-                    is ResultState.Success -> {
-                        val wordEntry = networkResult.data
-                        _uiState.update { it.copy(isLoading = false, dictWord = wordEntry) }
-                        dictionaryRepository.addSearchToHistory(_word, wordEntry?.translation)
-                    }
-                    else -> {
-                        val errorMessage = when(networkResult) {
-                            is ResultState.Empty -> "Word not found online."
-                            is ResultState.Error -> "Error: ${networkResult.message}"
-                            is ResultState.Exception -> "Network Error: ${networkResult.throwable.message}"
-                            else -> "An unknown error occurred."
-                        }
-                        _uiState.update { it.copy(isLoading = false, error = errorMessage) }
-                    }
-                }
+//                when (val networkResult = appApi.searchWord(_word)) {
+//                    is ResultState.Success -> {
+//                        val wordEntry = networkResult.data
+//                        _uiState.update { it.copy(isLoading = false, dictWord = wordEntry) }
+//                        dictionaryRepository.addSearchToHistory(_word, wordEntry?.translation)
+//                    }
+//                    else -> {
+//                        val errorMessage = when(networkResult) {
+//                            is ResultState.Empty -> "Word not found online."
+//                            is ResultState.Error -> "Error: ${networkResult.message}"
+//                            is ResultState.Exception -> "Network Error: ${networkResult.throwable.message}"
+//                            else -> "An unknown error occurred."
+//                        }
+//                        _uiState.update { it.copy(isLoading = false, error = errorMessage) }
+//                    }
+//                }
             }
         }
     }

@@ -24,7 +24,7 @@ LexiNote is a modern and simple app built with the latest Android development te
 
 ## 💔 Incomplete Section
 
-Because of copyright problems, I wasn't able to find suitable example sentences and images, so some features couldn't be finalized.
+Because of copyright problems, I wasn't able to find suitable example sentences and images, so some features couldn't be finalized. Currently a purely local application.
 
 
 ## 🛠️ Tech Stack & Architecture
