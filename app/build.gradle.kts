@@ -65,19 +65,12 @@ android {
         buildConfig = true
     }
 
-//    applicationVariants.all { variant ->
-//        variant.outputs.all { output ->
-//            // Example: Cast to ApplicationVariantOutput for APK specific properties
-//            val apkOutput = output as? com.android.build.gradle.internal.api.ApplicationVariantOutputImpl
-//            apkOutput?.outputFileName = "LexiNote-${variant.name}-${variant.versionName}.apk"
-//        }
-//    }
     androidComponents {
         onVariants { variant ->
             variant.outputs.forEach { output ->
                 val versionName = variant.outputs.firstOrNull()?.versionName?.getOrNull() ?: defaultConfig.versionName
                 if (output is com.android.build.api.variant.impl.VariantOutputImpl) {
-                    output.outputFileName.set("LexiNote-${variant.name}-${versionName}.apk")
+                    output.outputFileName.set("LexiNote-${variant.name}-v${versionName}.apk")
                 }
             }
         }
